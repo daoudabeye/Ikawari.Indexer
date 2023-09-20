@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  ikawari.indexer:
+    command: ["--chain=DCFA", "--local"]
+    environment:
+      - VIRTUAL_HOST= ruta.indexer.blockcore.net
+      - VIRTUAL_PORT= 9910
+      - VIRTUAL_PROTO= http
+      - VIRTUAL_NETWORK= proxy
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:9910
+      - ConnectionString=mongodb://154.68.23.243:27017
+      - DatabaseNameSubfix=true
+      - RpcSecure=false
+      - RpcUser=rpcuser
+      - RpcPassword=rpcikawari
+      - P2PPort=38001
+      - RPCPort=38002
+      - APIPort=38003
+      - NotifyUrl=https://apiurl
+      - NotifyBatchCount=0
+      - Logging__LogLevel__Default= Debug 
+    ports:
+      - "9910"
+      - "443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

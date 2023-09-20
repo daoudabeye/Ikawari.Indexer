@@ -1,0 +1,148 @@
+{
+   "Chain": {
+      "Name": "Ikawari DCFA blockchain",
+      "Symbol": "DCFA",
+      "Description": "Ikawari blockchain payment platefome",
+      "Url": "https://www.ikanet.ml/",
+      "Logo": "https://ikanet.ml/wp-content/uploads/2023/06/logo.png",
+      "Icon": "https://ikanet.ml/wp-content/uploads/2023/06/icon.png",
+      "Color": "#6746cc"
+   },
+   "TipBot": {
+      "Discord": {
+         "Enabled": true,
+         "SupportUsername": "dav007",
+         "SupportDiscriminator": "5919"
+      },
+      "Twitch": {
+         "Enabled": false
+      },
+      "Twitter": {
+         "Enabled": false
+      },
+      "Reddit": {
+         "Enabled": false
+      },
+      "Ticker": "TDCFA",
+      "NetworkFee": "0.00100000",
+      "ApiUrl": "http://154.68.23.243:38003/",
+      "UseSegwit": false,
+      "SupportUsername": "dav007",
+      "SupportDiscriminator": "5919",
+      "BotOptionalPrefix": "tipbot-exos",
+      "MinConfirmationsForDeposit": 6
+   },
+   "Network": {
+      "NetworkConsensusFactoryType": "Blockcore.Consensus.BlockInfo.PosConsensusFactory, Blockcore",
+      "NetworkPubkeyAddressPrefix": 28,
+      "NetworkScriptAddressPrefix": 88,
+      "NetworkWitnessPrefix": "dcfa",
+      //"P2PPort": 38001,
+      //"RPCPort": 38002,
+      //"APIPort": 38003
+   },
+   "Indexer": {
+    "StoreRawTransactions": true
+   },
+   "Insight": {
+      "Rewards": [
+         {
+            "Height": 0,
+            "Reward": 2
+         },
+         {
+            "Height": 2500,
+            "Reward": 20
+         },
+         {
+            "Height": 1111111,
+            "Reward": 2
+         }
+      ],
+      "Wallets": [
+         {
+            "Name": "Ikawari Chain Foundation",
+            "Type": "Fund",
+            "Url": "https://ikawari.github.io/",
+            "Address": [ "CU78ydNu7odWCEtrCcCSd3fN6hzZqBUyjz" ],
+            "InitialAmount": 2747200000.00,
+            "Logo": "https://ikawari.github.io/images/logo/ikawari-foundation.png"
+         },
+         {
+            "Name": "Private Ikawari Fund",
+            "Type": "Fund",
+            "Url": "",
+            "Address": [ "Ccoquhaae7u6ASqQ5BiYueASz8EavUXrKn" ],
+            "InitialAmount": 7554800000.00,
+            "Logo": "https://ikawari.github.io/images/logo/private-fund.png"
+         },
+         {
+            "Name": "Private Business Incubator Program",
+            "Type": "Fund",
+            "Url": "",
+            "Address": [ "CSHuP5iNWrQ3AFPvK9ZnkcH8qvhPHp94kK" ],
+            "InitialAmount": 3434000000.00,
+            "Logo": "https://ikawari.github.io/images/logo/private-ikw-fund.png"
+         },
+         {
+            "Name": "Rewards to be burnt",
+            "Type": "Burn",
+            "Address": [ "CeTQo6bTZyc3FwhysC3b2crNkMg21MLeuo" ]
+         },
+         {
+            "Name": "Burnt",
+            "Type": "Burn",
+            "Address": []
+         }
+      ]
+   },
+   "Explorer": {
+      "Indexer": {
+         "ApiUrl": "http://154.68.23.245:9910/api",
+         "DocUrl": "http://154.68.23.245:9910/docs"
+      },
+      "Currency": {
+         "ApiUrl": "https://api.coincap.io/v2/rates",
+         "AutoConvert": false
+      },
+      "Ticker": {
+         "WebUrl": "https://coinpaprika.com/coin/btc-bitcoin/",
+         "ApiUrl": "https://api.coinpaprika.com/v1/tickers/btc-bitcoin?quotes=USD,BTC",
+         "PricePath": "quotes.BTC.price",
+         "PricePathBTC": "quotes.BTC.price",
+         "PricePathUSD": "quotes.USD.price",
+         "PercentagePath": "quotes.BTC.percent_change_1h",
+         "IsBitcoinPrice": true
+      },
+      "Setup": {
+         "Title": "ikawari blochain Explorer",
+         "Footer": "Blockchain for Blockcore. Empowering developers to make custom blockchains.",
+         "Links": [
+            {
+               "icon": "fab fa-github",
+               "url": "https://www.github.com/ikawari_project"
+            },
+            {
+               "icon": "fas fa-link",
+               "url": "https://www.ikawari.ml"
+            },
+            {
+               "icon": "fab fa-discord",
+               "url": "https://www.ikawari.ml/discord"
+            },
+            {
+               "icon": "fab fa-twitter",
+               "url": "https://twitter.com/ikawari"
+            }
+         ]
+      },
+      "Features": {
+         "Ticker": true,
+         "Explorer": true,
+         "Network": true,
+         "API": true,
+         "About": true,
+         "POSWeight": false
+      }
+   }
+}

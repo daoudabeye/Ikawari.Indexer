@@ -1,0 +1,62 @@
+{
+  "profiles": {
+    "Docker (Development)": {
+      "commandName": "Docker",
+      "commandLineArgs": "--chain=DCFA --local",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "RpcDomain": "154.68.23.243",
+        "ConnectionString": "mongodb://154.68.23.243:27017",
+        "DatabaseNameSubfix": "true",
+        "RpcSecure": "false",
+        "RpcUser": "rpcuser",
+        "RpcPassword": "rpcikawari",
+        "P2PPort": "38001",
+        "RPCPort": "38002",
+        "APIPort": "38003",
+        "NotifyUrl": "https://apiurl",
+        "NotifyBatchCount": "0"
+      },
+      "publishAllPorts": true
+    },
+    "Kestrel (Development)": {
+      "commandName": "Project",
+      "commandLineArgs": "--chain=Development",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:9910/"
+    },
+    "LOCAL (DCFA)": {
+      "commandName": "Project",
+      "commandLineArgs": "--chain=DCFA --local",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "RpcDomain": "154.68.23.243",
+        "ConnectionString": "mongodb://154.68.23.243:27017",
+        "DatabaseNameSubfix": "true",
+        "RpcSecure": "false",
+        "RpcUser": "rpcuser",
+        "RpcPassword": "rpcikawari",
+        "P2PPort": "38001",
+        "RPCPort": "38002",
+        "APIPort": "38003",
+        "NotifyUrl": "https://apiurl",
+        "NotifyBatchCount": "0"
+      },
+      "applicationUrl": "http://localhost:9910/"
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:36048",
+      "sslPort": 44358
+    }
+  }
+}
